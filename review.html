@@ -10,6 +10,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+       <style>
+           tr:hover td {
+               background:rgba(203, 197, 197, 0.35)
+
+               }
+
+           td{
+            word-wrap: break-word;
+           }
+           thead{
+               background-color: rgb(203, 197, 197)
+           }
+            
+        </style>
+
     </head>
 
 
@@ -79,7 +95,7 @@
                     <label>Vlersimi*<input class="form-control input-group-lg" id="nr-vlersim" type="number" placeholder="  /5" max="5" min="1" required ></label>
                     <br>
                     <br>
-                    <label>Pershtypje <br> <textarea class="form-control input-group-lg" id="pershtypje-text" rows="5" cols="50" minlength="4"></textarea></label>
+                    <label>Pershtypje <br> <textarea class="form-control input-group-lg" id="pershtypje-text" rows="5" cols="50" minlength="4" maxlength="280"></textarea></label>
                     <br>
                     <br>
                     <button type="submit" class="btn btn-primary pull-left" >Dergo</button>
@@ -87,19 +103,8 @@
             </div>
         </div>
         <div>
-            <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 20px;
-  text-align: left;
-  font-family: sans-serif;    
-}
-</style>
 
-            <table>
+            <table class="table table-responsive "  style="table-layout: fixed; width: 100%">
                 <caption><h1>Review</h1></caption>
                 <thead>
                     <tr>
@@ -115,7 +120,8 @@ th, td {
             </table>
         </div>    
         </div>
-        </div>   
+       
+         
         <script src="assets/js/custom.js"></script>
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/bootstrap.js"></script>
@@ -201,9 +207,6 @@ th, td {
                          '</tr>';
                  }
  }
- 
-             
-                  
-             
+       
          </script>
 </html>
