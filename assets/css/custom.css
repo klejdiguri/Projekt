@@ -80,6 +80,10 @@ a:hover {
 	font-weight: 300;
     font-size: 18px;
 }
+b {
+  font-weight: 700;
+    font-size: 18px;
+}
 .navbar {
 	background-color: #e0e0e0;
 }
@@ -143,7 +147,7 @@ footer .cright {
 .info_block .data {
     margin-right: 20px;
 }
-.info_block .data p {
+.info_block .data p ,b {
     color: #575756;
     font-size: 19px;
     font-family: "Open+Sans",Georgia,Serif;
@@ -309,7 +313,7 @@ footer .cright {
   font-family: "PT Serif",Georgia,Serif;
 }
 
-.blog_body p {
+.blog_body p, b {
   font-size: 19px;
   font-family: "PT Serif",Georgia,Serif;
   line-height: 32px;
@@ -746,7 +750,7 @@ input[type="checkbox"]:disabled + .label-text:before{
 }
 
 @media screen and (max-width: 425px){
-    .info_block .data p {
+    .info_block .data p ,b {
         font-size: 16px;
         line-height: 20px;
     }
@@ -770,4 +774,20 @@ input[type="checkbox"]:disabled + .label-text:before{
   .emb {
     font-size: 12px;
   }
+}
+ .parent {
+    border: 1px black;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+ .child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+     }
+.parent:hover .child{
+  transform: scale(1.3);
 }
