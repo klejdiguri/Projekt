@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="google-site-verification" content="4PHPBIYauS2z-saHl55KSiX82NlLy_RT8L7DbA-9-E8" />
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>EasyClean24</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -45,9 +47,9 @@
 		        <li class="dropdown">
 		          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sherbimet <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="sherbimi 1.html">sherbimi 1</a></li>
-		            <li><a href="sherbimi 2.html">sherbimi 2</a></li>
-		            <li><a href="sherbimi 3.html">sherbimi 3</a></li>
+		            <li><a href="sherbimi 1.html">Sherbime pastrimi</a></li>
+		            <li><a href="sherbimi 2.html">Pastrim tapicerie</a></li>
+		            <li><a href="sherbimi 3.html">Pastrim fasadash xhami</a></li>
 		          </ul>
 		        </li>
 		        <li><a href="review page.html">Review</a></li>
@@ -70,11 +72,25 @@
 					<div class="col-xs-12 col-md-9">
 						<div class="info_block">
 							<div class="data">
-								<p>Unterhaltsreinigung ist Vertrauenssache. Verlassen Sie sich auf das kompetente, freundliche Auftreten unseres Personals, stets getragen von Verantwortung und Servicebewusstsein. Untrennbar dazu gehören selbstverständlich absolute Schweigepflicht und Diskretion.</p>
-								<p>Jeder Raum hat seine individuelle Nutzung und Einrichtung. Diese verschiedenen Materialien und Verschmutzungen müssen individuell gereinigt und entfernt werden. Deshalb stellen wir uns auf die individuellen Gegebenheiten des zu reinigenden Objektes ein. Dazu erarbeiten wir gemeinsam mit Ihnen das gewünschte bzw. benötigte Leistungspaket.</p>
+								<div style=" border-radius: 10px; box-shadow: 2px 4px 5px 0px #9E9E9E; border: 1px solid #ffffff; background-color:#3c763d;padding: 10px; color: #ffffff; font-size: 28px;">
+									Pastrim Fasadash Xhami
+								</div>
+										<hr>
+										<p>Për pastrimin e fasadave të xhamit dhe larjen e tyre kur ato ndodhen në lartësi, EasyClean24 disponon makineritë e nevojshme për t’i kryer ato në sigurinë maksimale dhe brenda një kohe të shkurtër.<b>Kryejmë pastrime për fasada të të gjitha sipërfaqeve, si fasada të jashtme ashtu edhe të brendshme, në çfardollojë lartësie ato ndodhen.</b></p>
+										<div class="parent">
+											<div class="child">
+												<img src="assets/images/glass.png" class="img-responsive">
+											</div>
+										</div>
+										<p>Dritaret nuk mund të nënvleresohen, pasi janë pikërisht ato që mundësojnë depërtimin e dritës natyrale në ambientet e brendshme. Për këtë arsye, EasyClean24 kujdeset për to në mënyrë të veçantë dhe përdor produkte të cilësisë së lartë.</p>
+										<p><b>Për larjen e fasadave të jashtme disponojmë vinça dhe shkallë që bëjnë të mundur arritjen me lehtësi të sipërfaqes që duhet pastruar.</b>
+											Si rezultat, larja kryehet në siguri të plotë, në kohë relativisht të shkurtër dhe mbi të gjitha, kosto të arsyeshme.EasyClean24 është në gjendje të kryej çfardolloj pastrimi ose disinfektimi edhe në sipërfaqe të mëdha, pasi disponojmë makineritë dhe produktet e nevojshme, si edhe një staf të kualifikuar dhe me një eksperiencë disa vjeçare në këtë fushë. 
+										</p>
+											<video id="vid" controls muted style="width: 100%;height: auto;">
+								        		<source src="assets/images/video1.mp4" type="video/mp4">
+							        		</video>
 
-						<img src="assets/images/ser1.jpg" class="img-responsive">
-						<p>Wir sind flexibel - Die Unterhaltsreinigung kann auch zu Zeiten durchgeführt werden, an denen Ihr Geschäftsbetrieb nicht oder nur geringfügig beeinträchtigt wird.</p>
+								<p><b>Kompania jonë e pastrimit operon në të gjithë territorin nacional<b/></p>
 					</div>
 						</div>
 					</div>
@@ -109,6 +125,30 @@
 	</footer>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+		<script>
+			amountscrolled();
+			function getDocHeight() {
+			    var D = document;
+			    return Math.max(
+			        D.body.scrollHeight, D.documentElement.scrollHeight,
+			        D.body.offsetHeight, D.documentElement.offsetHeight,
+			        D.body.clientHeight, D.documentElement.clientHeight
+			    )
+			}
+			function amountscrolled(){
+			    var winheight= window.innerHeight
+			    var docheight = getDocHeight()
+			    var scrollTop = window.pageYOffset
+			    var trackLength = docheight - winheight
+			    var pctScrolled = Math.floor(scrollTop/trackLength * 100)
+	                       // Set the value of the class attribute
+			    if (pctScrolled>50) {
+			    	document.getElementById('vid').play();
+
+			    }
+			    setTimeout(amountscrolled, 500);
+			}
+		</script>
 	
 </body>
 </html>
